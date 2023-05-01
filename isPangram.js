@@ -1,13 +1,13 @@
-function isPangram(string){
+function isPangram(string) {
     let result = false;
     let arr = string.toLowerCase()
-                    .split('')
-                    .filter(x => x.charCodeAt(0) >= 97 && x.charCodeAt(0) <= 122);
+        .split('')
+        .filter(x => x.charCodeAt(0) >= 97 && x.charCodeAt(0) <= 122);
     let uniqueArr = [];
     arr.forEach(element => {
-        if (!uniqueArr.includes(element)) {
-            uniqueArr.push(element)
-        }
+            if (!uniqueArr.includes(element)) {
+                uniqueArr.push(element);
+            }
     });
     if (uniqueArr.length === 26) {
         result = true;
