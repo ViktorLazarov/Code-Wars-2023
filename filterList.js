@@ -1,5 +1,5 @@
-function filterList(l) {
-    let result = l.filter(x => typeof x === 'number')
+function filterList(j) {
+    let result = j.filter(x => typeof x === 'number')
     return result;
 }
 
